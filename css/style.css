@@ -216,7 +216,7 @@ img {
 .skill-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: -50px;
 }
 
@@ -548,3 +548,32 @@ img {
     margin-bottom: 20px;
   }
 }
+
+
+.image-container {
+  display: flex; /* 横並びに配置 */
+  justify-content: center; /* 中央寄せ */
+  align-items: center; /* 縦の中央揃え */
+  gap: 20px; /* 画像の間隔 */
+}
+
+.image-container img {
+  width: 48%; /* 画像のサイズを調整 */
+  max-width: 400px; /* 最大幅を指定 */
+  height: auto; /* 縦横比を維持 */
+  border-radius: 10px; /* 角を丸める（オプション） */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 影をつける（オプション） */
+}
+
+@media (max-width: 768px) {
+  .image-container {
+      flex-direction: column; /* 画面幅が狭いときは縦並び */
+      align-items: center;
+  }
+
+  .image-container img {
+      width: 80%; /* モバイルでは幅を広げる */
+  }
+}
+
+
