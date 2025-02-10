@@ -76,7 +76,7 @@ img {
   top: 0;
   z-index: 1;
   width: 100%;
-  background-color: #fff;
+  background-color: #ffed63;
   box-shadow: 0 5px 10px -6px rgba(0,0,0,.1);
 }
 
@@ -129,7 +129,7 @@ img {
   transition: .3s;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: #333;
+  background-color: #d11e1e;
 }
 
 .gnav-item a:hover:after {
@@ -164,6 +164,7 @@ img {
   line-height: 1;
   margin-bottom: 40px;
   letter-spacing: .08em;
+  color: #d11e1e;
 }
 
 .mv-text {
@@ -185,10 +186,13 @@ img {
   margin-right: 1.58730%;
   margin-bottom: 40px;
   color: #333;
+  transition: transform 0.3s ease-in-out;
 }
 
 .works-item:hover {
   opacity: .9;
+  color: #d11e1e;
+  transform: translateY(-8px);
 }
 
 .works-item:nth-of-type(3n) {
